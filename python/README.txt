@@ -44,7 +44,7 @@ elif sys.argv[2] == "QA_B" :
         database="qa_b"
 elif sys.argv[2] == "QA_C" :
         database="qa_c"
-db = MySQLdb.connect("123.57.10.243","yourSelf","Ca$98d%b9c",database )
+db = MySQLdb.connect("127.0.0.1","yourSelf","Ca$98d%b9c",database )
 cursor = db.cursor()
 cursor.execute(sqls)
 data =  cursor.fetchone()
